@@ -1,0 +1,1001 @@
+Started GET "/" for 127.0.0.1 at 2018-04-14 19:40:49 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 156ms (Views: 8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-14 19:41:40 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1759ms (Views: 1603.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-14 19:41:59 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 25.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-14 20:59:04 +0530
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (120.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (107.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIssuedItems (20180414152601)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-14 21:01:32 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIssuedItems (20180414153109)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIssuedItems (20180414154907)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "issued_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "Name" varchar, "RollNo" varchar, "Email" varchar, "Equipment" varchar, "IssueDate" date, "ReturnDate" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180414154907"]]
+  [1m[35m (141.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-04-14 15:49:34.421782"], ["updated_at", "2018-04-14 15:49:34.421782"]]
+  [1m[35m (79.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-04-14 21:20:11 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 289ms (Views: 276.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-14 21:20:31 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 203ms (Views: 193.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-14 21:20:36 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-14 21:22:40 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `entries_path' for #<WelcomeController:0x000000039198a0>):
+  
+app/controllers/welcome_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-04-14 21:23:04 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::IssuedItems_path):
+  
+app/controllers/welcome_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-04-14 21:23:30 +0530
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 1ms
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-14 21:23:45 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.2ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 222ms (Views: 210.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-14 21:23:53 +0530
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (21.1ms)
+  Rendered issued_items/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 78ms (Views: 59.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/issued_items" for 127.0.0.1 at 2018-04-14 21:24:35 +0530
+Processing by IssuedItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wJXs6v663fgi0WoE8VC7CmD+rhQDK6KT914O9Mw4j0U+4NT4KoZUtN5R9hdvAy026pQ5gMA11/vhmOp3PcKDRw==", "issued_item"=>{"Name"=>"Prateksha", "RollNo"=>"IMT2017517", "Email"=>"asu@gmail.com", "Equipment"=>"ThrowBall", "IssueDate(1i)"=>"2018", "IssueDate(2i)"=>"4", "IssueDate(3i)"=>"14", "ReturnDate(1i)"=>"2018", "ReturnDate(2i)"=>"4", "ReturnDate(3i)"=>"21"}, "commit"=>"Create Issued item"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "issued_items" ("Name", "RollNo", "Email", "Equipment", "IssueDate", "ReturnDate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "Prateksha"], ["RollNo", "IMT2017517"], ["Email", "asu@gmail.com"], ["Equipment", "ThrowBall"], ["IssueDate", "2018-04-14"], ["ReturnDate", "2018-04-21"], ["created_at", "2018-04-14 15:54:35.553955"], ["updated_at", "2018-04-14 15:54:35.553955"]]
+  [1m[35m (193.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/issued_items/1
+Completed 302 Found in 203ms (ActiveRecord: 195.5ms)
+
+
+Started GET "/issued_items/1" for 127.0.0.1 at 2018-04-14 21:24:35 +0530
+Processing by IssuedItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT  "issued_items".* FROM "issued_items" WHERE "issued_items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/show.html.erb within layouts/application
+  Rendered issued_items/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 46.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-14 21:24:39 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.6ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/issued_items/1" for 127.0.0.1 at 2018-04-14 21:27:19 +0530
+Processing by IssuedItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT  "issued_items".* FROM "issued_items" WHERE "issued_items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/show.html.erb within layouts/application
+  Rendered issued_items/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 39.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issued_items/1/edit" for 127.0.0.1 at 2018-04-14 21:27:21 +0530
+Processing by IssuedItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssuedItem Load (0.4ms)[0m  [1m[34mSELECT  "issued_items".* FROM "issued_items" WHERE "issued_items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/edit.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (19.3ms)
+  Rendered issued_items/edit.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 64ms (Views: 58.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-14 21:27:23 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.6ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/issued_items/1" for 127.0.0.1 at 2018-04-14 21:27:27 +0530
+Processing by IssuedItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wrp8tVacK8+ntCDrX1oo9unmvmCKUvI6ukiby8njTtVuICqWvwu//c4Efyerqcr3W4XJyW838OgNoKbfv5QrWg==", "id"=>"1"}
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT  "issued_items".* FROM "issued_items" WHERE "issued_items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "issued_items" WHERE "issued_items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (203.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 211ms (ActiveRecord: 204.7ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-14 21:27:27 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.2ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-14 21:27:44 +0530
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (8.5ms)
+  Rendered issued_items/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-14 21:27:56 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.5ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-14 21:28:23 +0530
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (10.2ms)
+  Rendered issued_items/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/issued_items" for 127.0.0.1 at 2018-04-14 21:48:49 +0530
+Processing by IssuedItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d861Q4KjrpDbsazfoFhuJviH/tFpbScLGglLv5grIR+Ju41RVp8n3CcxMMw+C/gacu1pRapzUmMMz688adEtHQ==", "issued_item"=>{"Name"=>"Prateksha", "RollNo"=>"IMT2017517", "Email"=>"prateksha.u@", "Equipment"=>"ThrowBall", "IssueDate(1i)"=>"2018", "IssueDate(2i)"=>"4", "IssueDate(3i)"=>"14", "ReturnDate(1i)"=>"2018", "ReturnDate(2i)"=>"4", "ReturnDate(3i)"=>"21"}, "commit"=>"Create Issued item"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issued_items" ("Name", "RollNo", "Email", "Equipment", "IssueDate", "ReturnDate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "Prateksha"], ["RollNo", "IMT2017517"], ["Email", "prateksha.u@"], ["Equipment", "ThrowBall"], ["IssueDate", "2018-04-14"], ["ReturnDate", "2018-04-21"], ["created_at", "2018-04-14 16:18:49.680263"], ["updated_at", "2018-04-14 16:18:49.680263"]]
+  [1m[35m (192.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/issued_items/2
+Completed 302 Found in 201ms (ActiveRecord: 193.0ms)
+
+
+Started GET "/issued_items/2" for 127.0.0.1 at 2018-04-14 21:48:49 +0530
+Processing by IssuedItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT  "issued_items".* FROM "issued_items" WHERE "issued_items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering issued_items/show.html.erb within layouts/application
+  Rendered issued_items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-14 21:48:51 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.4ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-14 21:53:08 +0530
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (14.4ms)
+  Rendered issued_items/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-14 22:55:13 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20180414165659)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180414165659"]]
+  [1m[35m (123.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-14 22:55:36 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (21.2ms)
+  Rendered issued_items/new.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 230ms (Views: 207.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-14 22:55:42 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-14 22:55:49 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.5ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-14 22:55:51 +0530
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (13.3ms)
+  Rendered issued_items/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-15 00:23:05 +0530
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (7.7ms)
+  Rendered issued_items/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-15 00:26:27 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (22.0ms)
+  Rendered issued_items/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 260ms (Views: 228.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-15 00:26:29 +0530
+Processing by IssuedItemsController#new as HTML
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (10.9ms)
+  Rendered issued_items/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issued_items/" for 127.0.0.1 at 2018-04-15 00:33:11 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.2ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 81ms (Views: 76.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 00:33:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-15 00:33:30 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 116ms (Views: 71.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 00:33:42 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.4ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 53ms (Views: 50.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/issued_items/2/edit" for 127.0.0.1 at 2018-04-15 00:33:44 +0530
+Processing by IssuedItemsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIssuedItem Load (1.0ms)[0m  [1m[34mSELECT  "issued_items".* FROM "issued_items" WHERE "issued_items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering issued_items/edit.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (20.3ms)
+  Rendered issued_items/edit.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 85ms (Views: 73.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 00:33:48 +0530
+Processing by IssuedItemsController#index as HTML
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.4ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 63ms (Views: 58.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 00:38:13 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IssuedItemsController#index as HTML
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-15 00:38:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 243ms (Views: 221.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-04-15 00:38:21 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-04-15 00:38:44 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eVfjkc6VeT0C41QVgN+E3dnecliVkrzBLx95uBhxqjwvWs2qWchnG7WJqrqXZaH8vxdYOQIv8vo4wK9QGyCGZQ==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "pratekshau@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "pratekshau@gmail.com"], ["encrypted_password", "$2a$11$S5MnckcU9kio8AE6IhG0Ku03hwJ3wDZ3sia1RALHVVVgFWUNtRPaG"], ["created_at", "2018-04-14 19:08:44.476170"], ["updated_at", "2018-04-14 19:08:44.476170"]]
+  [1m[35m (307.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-04-14 19:08:44.789743"], ["last_sign_in_at", "2018-04-14 19:08:44.789743"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2018-04-14 19:08:44.793156"], ["id", 1]]
+  [1m[35m (77.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 711ms (ActiveRecord: 387.6ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 00:38:44 +0530
+Processing by IssuedItemsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 86ms (Views: 68.2ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-15 00:39:20 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JIQdQdOfB9tRd5ynkkHTX6s11loDNlD84M1N10xMCfGIHktiOgiT6TjHw2tmsjFeGVah8+ZTUi5XJXDDOjtsfg=="}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 00:39:20 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-15 00:39:22 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 54ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-15 00:39:30 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HgB4OXjPDNE4cl/nhvOY+bSr88Vnay56b1SVqwN0ZJK2Da5EXJT375BjUAVLBE7vwNgxabQ56RixKvpffKLGIg==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pratekshau@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-14 19:09:30.265835"], ["sign_in_count", 2], ["updated_at", "2018-04-14 19:09:30.266897"], ["id", 1]]
+  [1m[35m (85.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 304ms (ActiveRecord: 87.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 00:39:30 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 00:39:30 +0530
+Processing by IssuedItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-15 00:39:33 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R7z88cCVgLhbodCDknh9JsZF6RiC5ub0VoJedRYi4QHxhgS+AEIXN0vHoRQ03y2PPasFggigcU86PPQDNoqGJg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 00:39:33 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-15 00:39:34 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-15 00:39:42 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twAmHc5oYOiYEPKrgqs7go4krCG2OFX/dRBtREIQxff+QAcpuMhOcT7OGwWqaExCn7o94oaf5q825zRAkTs3nA==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pratekshau@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 176ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twAmHc5oYOiYEPKrgqs7go4krCG2OFX/dRBtREIQxff+QAcpuMhOcT7OGwWqaExCn7o94oaf5q825zRAkTs3nA==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 201ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-15 00:47:38 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0keId9P1s79HAPMhUKkE+bgkMt3OBmGAD4tTGHJuWZt3Xlh8w11kKcpeFvCtJula6UQBHhB+CKYmfY9JVEndqQ==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pratekshau@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-14 19:17:38.626503"], ["last_sign_in_at", "2018-04-14 19:09:30.265835"], ["sign_in_count", 3], ["updated_at", "2018-04-14 19:17:38.627377"], ["id", 1]]
+  [1m[35m (93.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 298ms (ActiveRecord: 95.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 00:47:38 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 00:47:38 +0530
+Processing by IssuedItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.2ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-15 01:05:02 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+c0YQVwBX8eCNEnVi26f1X9fmjrx69yBTvpJc4pOpih4AlclSDja5W7+MGk0vGgSJtcdV83F86s35IEdeYrGsA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:05:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-15 01:05:05 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 72ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-15 01:05:12 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MWYVE7yYCE+Ww2onBhECuZo80t4VeKtHPSFsFchQnkctEkvSxFGNSrgOP7VYg6awMa466K607q6rmxuXkQyNKw==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pratekshau@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-14 19:35:12.417133"], ["last_sign_in_at", "2018-04-14 19:17:38.626503"], ["sign_in_count", 4], ["updated_at", "2018-04-14 19:35:12.418088"], ["id", 1]]
+  [1m[35m (73.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 264ms (ActiveRecord: 75.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:05:12 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 01:05:12 +0530
+Processing by IssuedItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-15 01:15:52 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qlRn0et6LPzWvLcOYDcQfdNzX4so5SUvXRcFiUXwm4aJKhvrn3Qbctnmyq3BgK9jkIMaqrYJ/41xUrhdTjsYlw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:15:52 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-15 01:15:53 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-15 01:15:59 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kMkiA5rbgEHQjK4I3PxLSteMDRtUsqORjL6a0jUXcOPEZo2vQKwzJPvcYSrKNBRJqmiDw3ZZHzX861aDRhQXgg==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pratekshau@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-14 19:45:59.369855"], ["last_sign_in_at", "2018-04-14 19:35:12.417133"], ["sign_in_count", 5], ["updated_at", "2018-04-14 19:45:59.370653"], ["id", 1]]
+  [1m[35m (101.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 310ms (ActiveRecord: 102.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:15:59 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 01:15:59 +0530
+Processing by IssuedItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.2ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-15 01:25:22 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"55RcYtm40ubVk0j8bBBecDEGZnijXAWOjDt2I7xf9oEs8+dBxBGkyH9nlZZH7vAHjNKKYfayJMm0dfDp2d0ZxA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:25:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-15 01:25:23 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-15 01:25:32 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vICptazU7p3K/GpIgTRhB+nA4g29Lpmht9j4Tx0dVpwEQ2ifJamYaiBDfYeNFp2ng9ueLLKlRwGjEgyo7+RSAg==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pratekshau@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-14 19:55:32.398388"], ["last_sign_in_at", "2018-04-14 19:45:59.369855"], ["sign_in_count", 6], ["updated_at", "2018-04-14 19:55:32.399323"], ["id", 1]]
+  [1m[35m (65.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 268ms (ActiveRecord: 67.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:25:32 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 01:25:32 +0530
+Processing by IssuedItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 01:48:23 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IssuedItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.2ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 262ms (Views: 219.2ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-15 01:50:08 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+dW79DFO7txReEqYBi9e3vRcAka83Sm7Sq+NpzdVSrXX4rQRbQ5KFNDbT59yWKzHUu/1OttOhL5+OyWV2rO40w=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:50:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-15 01:50:10 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 70ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-15 01:50:19 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVyc6WxpP68FxTIrHOpn1ToodOY2jCBZESTdAKLh+owBWKAExEXrAhP7pGRpyCM+RxHwqt/uMvrYS72K7ztW1A==", "user"=>{"email"=>"pratekshau@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pratekshau@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-14 20:20:20.087580"], ["last_sign_in_at", "2018-04-14 19:55:32.398388"], ["sign_in_count", 7], ["updated_at", "2018-04-14 20:20:20.089258"], ["id", 1]]
+  [1m[35m (83.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 306ms (ActiveRecord: 84.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:50:20 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/issued_items
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/issued_items" for 127.0.0.1 at 2018-04-15 01:50:20 +0530
+Processing by IssuedItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/index.html.erb within layouts/application
+  [1m[36mIssuedItem Load (0.3ms)[0m  [1m[34mSELECT "issued_items".* FROM "issued_items"[0m
+  Rendered issued_items/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 47ms (Views: 40.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/issued_items/new" for 127.0.0.1 at 2018-04-15 01:50:24 +0530
+Processing by IssuedItemsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering issued_items/new.html.erb within layouts/application
+  Rendered issued_items/_form.html.erb (11.9ms)
+  Rendered issued_items/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-15 01:50:39 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"59v7HPZyFC5SntCQVsKno6jKlBNCskI6dT1m3JWxJjDSBRPItrkQfPFAgxLdTS57CrLkpJweLpqadBN3Labsgw=="}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 01:50:39 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 02:30:42 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-15 02:31:25 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+

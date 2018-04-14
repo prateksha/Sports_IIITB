@@ -1,0 +1,2 @@
+class IssuedItem < ApplicationRecord
+end

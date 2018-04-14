@@ -1,0 +1,47 @@
+<%= form_with(model: issued_item, local: true) do |form| %>
+  <% if issued_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(issued_item.errors.count, "error") %> prohibited this issued_item from being saved:</h2>
+
+      <ul>
+      <% issued_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Name %>
+    <%= form.text_field :Name, id: :issued_item_Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :RollNo %>
+    <%= form.text_field :RollNo, id: :issued_item_RollNo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Email %>
+    <%= form.text_field :Email, id: :issued_item_Email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Equipment %>
+    <%= form.text_field :Equipment, id: :issued_item_Equipment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :IssueDate %>
+    <%= form.date_select :IssueDate, id: :issued_item_IssueDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ReturnDate %>
+    <%= form.date_select :ReturnDate, id: :issued_item_ReturnDate %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

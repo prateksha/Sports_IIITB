@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @issued_item.Name %>
+</p>
+
+<p>
+  <strong>Rollno:</strong>
+  <%= @issued_item.RollNo %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @issued_item.Email %>
+</p>
+
+<p>
+  <strong>Equipment:</strong>
+  <%= @issued_item.Equipment %>
+</p>
+
+<p>
+  <strong>Issuedate:</strong>
+  <%= @issued_item.IssueDate %>
+</p>
+
+<p>
+  <strong>Returndate:</strong>
+  <%= @issued_item.ReturnDate %>
+</p>
+
+<%= link_to 'Edit', edit_issued_item_path(@issued_item) %> |
+<%= link_to 'Back', issued_items_path %>
